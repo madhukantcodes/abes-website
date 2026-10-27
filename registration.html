@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register here</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #1e293b;
+            font-family: Arial, sans-serif;
+        }
+
+        h2 {
+            margin: 36px 0 18px;
+            color: #1d4ed8;
+            font-size: 2rem;
+        }
+
+        hr {
+            width: min(400px, 90%);
+            height: 3px;
+            border: 0;
+            border-radius: 999px;
+            background: #bfdbfe;
+        }
+
+        form {
+            width: fit-content;
+            max-width: 100%;
+            margin: 28px auto;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 16px;
+            background: #fff;
+            box-shadow: 0 12px 30px rgb(15 23 42 / 10%);
+        }
+
+        table {
+            border-spacing: 12px 14px;
+        }
+
+        td {
+            padding: 4px;
+        }
+
+        td > label {
+            font-weight: 600;
+        }
+
+        input:not([type="radio"]) {
+            min-height: 40px;
+            padding: 9px 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+            font: inherit;
+        }
+
+        input:not([type="radio"]):not([type="submit"]):not([type="reset"]) {
+            width: 100%;
+        }
+
+        input:focus {
+            outline: 3px solid rgb(59 130 246 / 20%);
+            border-color: #3b82f6;
+        }
+
+        fieldset {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            border: 1px solid #cbd5e1;
+            border-radius: 8px;
+        }
+
+        legend {
+            padding: 0 6px;
+            font-weight: 600;
+        }
+
+        input[type="radio"] {
+            accent-color: #2563eb;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            min-width: 100px;
+            padding: 10px 16px;
+            border: 0;
+            border-radius: 8px;
+            font: inherit;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 150ms ease, transform 150ms ease;
+        }
+
+        input[type="reset"] {
+            background: #e2e8f0;
+            color: #334155;
+        }
+
+        input[type="submit"] {
+            background: #2563eb;
+            color: #fff;
+        }
+
+        input[type="reset"]:hover,
+        input[type="submit"]:hover {
+            transform: translateY(-1px);
+        }
+
+        input[type="reset"]:hover {
+            background: #cbd5e1;
+        }
+
+        input[type="submit"]:hover {
+            background: #1d4ed8;
+        }
+
+        @media (max-width: 520px) {
+            body {
+                margin: 16px !important;
+            }
+
+            form {
+                width: 100%;
+                padding: 4px;
+            }
+
+            table {
+                width: 100%;
+                border-spacing: 6px 12px;
+            }
+
+            td {
+                padding: 2px;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 30px;">
+    <h2 style="text-align: center;">Register here</h2>
+    <hr width="400">
+    <form >
+    <table style="margin-left: auto; margin-right: auto; padding: 10px;"> 
+        <tr>
+            <td>
+                <label for="fullname"> Full Name</label>
+            </td>
+            <td><input type="text" id="fullname" placeholder = "Enter your name here"></td>
+        </tr>
+        <tr>
+            <td><label for="email"> Email :</label></td>
+            <td><input type="email" id= "email" placeholder="Email"></td>
+        </tr>
+        <tr>
+            <td><label for="date">DOB</label></td>
+            <td><input type="date"></td>
+        </tr>
+        <tr>
+            <td><label for="password"> Password :</label></td>
+            <td><input type="password" id= "password" placeholder="Password"></td>
+        </tr>
+        <tr>
+            <td><label for="c-pass"> Confirm password :</label></td>
+            <td><input type="password" id= "c-pass" placeholder="confirm Password"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <fieldset>
+                    <legend>Gender</legend>
+                    <input type="radio" id="male" name= "gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name= "gender" value="Female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name= "gender" value="Others">
+                    <label for="other">Others</label>
+                </fieldset>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="reset"> 
+            </td>
+            <td>
+                <input type="submit">
+            </td>
+        </tr>
+    </table>
+</form>
+    
+
+</body>
+</html>
